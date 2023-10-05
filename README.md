@@ -11,7 +11,6 @@ This Python script is designed to streamline the process of adding users and gro
 
 - **Regular Expression (`re`):** The regular expression is used to check for the presence of a `#` at the start of each line in the input file. Lines starting with `#` are skipped during processing.
 
-- **Input File Format:** The input file is expected to follow this format:
 ### Operation
 
 #### Input File Specification
@@ -33,5 +32,8 @@ username:default_password:last_name:first_name:comma_separated_list_of_groups
 
 ```bash
 python3 create_users.py < create_users.input
+```
+This command will execute the script, processing the data from the input file.
 
-
+- The script will create user accounts, set passwords, and assign users to groups based on the data provided in the input file.
+- Be cautious when running scripts with administrative privileges, as they can make system-level changes.
